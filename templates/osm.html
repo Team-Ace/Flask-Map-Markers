@@ -110,7 +110,7 @@
             
         
             
-            <style> #map_6f54d27658d44c7bbcde354af1edbbd6 {
+            <style> #map_74e9402e06544937a5b2027a49beed5c {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -126,7 +126,7 @@
             
         
             
-            <div class="folium-map" id="map_6f54d27658d44c7bbcde354af1edbbd6" ></div>
+            <div class="folium-map" id="map_74e9402e06544937a5b2027a49beed5c" ></div>
         
         
         
@@ -140,9 +140,9 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_6f54d27658d44c7bbcde354af1edbbd6 = L.map('map_6f54d27658d44c7bbcde354af1edbbd6', {
-                                           center:[45.5236,-122.675],
-                                           zoom: 10,
+            var map_74e9402e06544937a5b2027a49beed5c = L.map('map_74e9402e06544937a5b2027a49beed5c', {
+                                           center:[40.80629,-73.963005],
+                                           zoom: 13,
                                            maxBounds: bounds,
                                            layers: [],
                                            crs: L.CRS.EPSG3857
@@ -151,7 +151,7 @@
         
         
             
-            var tile_layer_492612197a024a41a9169b92258fd715 = L.tileLayer(
+            var tile_layer_dad5af49ff184206a82c0bf4d7c7b3d4 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -159,8 +159,44 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_6f54d27658d44c7bbcde354af1edbbd6);
+                ).addTo(map_74e9402e06544937a5b2027a49beed5c);
 
+        
+        
+            
+
+            var marker_27003c8b26f747a78f44e3e0a82d8ec2 = L.marker(
+                [40.806290,-73.963005],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_74e9402e06544937a5b2027a49beed5c);
+            
+        
+            
+
+                var icon_2b30bc2ed9c54776b97b58a63e4f6921 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_27003c8b26f747a78f44e3e0a82d8ec2.setIcon(icon_2b30bc2ed9c54776b97b58a63e4f6921);
+            
+        
+            
+            var popup_52986d3668f6444cac1cc6616332d798 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bfca6b055e84690bea301540b4f4aaf = $('         <div id="html_5bfca6b055e84690bea301540b4f4aaf"                 style="width: 100.0%; height: 100.0%;">                 My new marker</div>                 ')[0];
+                popup_52986d3668f6444cac1cc6616332d798.setContent(html_5bfca6b055e84690bea301540b4f4aaf);
+            
+
+            marker_27003c8b26f747a78f44e3e0a82d8ec2.bindPopup(popup_52986d3668f6444cac1cc6616332d798);
+
+            
         
         
         
