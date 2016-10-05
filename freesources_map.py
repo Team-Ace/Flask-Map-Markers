@@ -17,7 +17,7 @@ app.config.from_envvar('FREESOURCES_SETTINGS', silent=True)
 
 initial_location = [40.806290, -73.963005]
 markers = []
-curr_map = folium.Map(location=initial_location, zoom_start=13)
+curr_map = folium.Map(location=initial_location, zoom_start=8)
 curr_map.save('templates/osm.html')
 
 def connect_db():
@@ -81,6 +81,7 @@ def update_db():
 	db = get_db()
 	db.execute('insert into entries (marker, latlong) values (?, ?)', [0, latlong])
 	db.commit()
+	print('New entry posted')
 	flash('New entry posted!')
 	latlong = latlong.split(',')
 	marker = folium.Marker(latlong, popup='New marker! :D').add_to(curr_map)

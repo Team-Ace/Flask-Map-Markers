@@ -110,7 +110,7 @@
             
         
             
-            <style> #map_74e9402e06544937a5b2027a49beed5c {
+            <style> #map_b0cdd0183ec74f0cbf695eecc72813b5 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -126,7 +126,7 @@
             
         
             
-            <div class="folium-map" id="map_74e9402e06544937a5b2027a49beed5c" ></div>
+            <div class="folium-map" id="map_b0cdd0183ec74f0cbf695eecc72813b5" ></div>
         
         
         
@@ -140,9 +140,9 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_74e9402e06544937a5b2027a49beed5c = L.map('map_74e9402e06544937a5b2027a49beed5c', {
+            var map_b0cdd0183ec74f0cbf695eecc72813b5 = L.map('map_b0cdd0183ec74f0cbf695eecc72813b5', {
                                            center:[40.80629,-73.963005],
-                                           zoom: 13,
+                                           zoom: 8,
                                            maxBounds: bounds,
                                            layers: [],
                                            crs: L.CRS.EPSG3857
@@ -151,7 +151,7 @@
         
         
             
-            var tile_layer_dad5af49ff184206a82c0bf4d7c7b3d4 = L.tileLayer(
+            var tile_layer_c387b1cd66794d65b8d6a4aff09d1509 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -159,42 +159,54 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_74e9402e06544937a5b2027a49beed5c);
+                ).addTo(map_b0cdd0183ec74f0cbf695eecc72813b5);
 
         
         
             
 
-            var marker_27003c8b26f747a78f44e3e0a82d8ec2 = L.marker(
-                [40.806290,-73.963005],
+            var marker_544daba3cb1643ea9950f8f3b36df0b8 = L.marker(
+                [40.80629,-73.963005],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_74e9402e06544937a5b2027a49beed5c);
+                .addTo(map_b0cdd0183ec74f0cbf695eecc72813b5);
             
         
             
+            var popup_6bba9a969eac49638682640e2b9dd9bb = L.popup({maxWidth: '300'});
 
-                var icon_2b30bc2ed9c54776b97b58a63e4f6921 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_27003c8b26f747a78f44e3e0a82d8ec2.setIcon(icon_2b30bc2ed9c54776b97b58a63e4f6921);
+            
+                var html_e82060d59b654a899bf4eb0653593cef = $('         <div id="html_e82060d59b654a899bf4eb0653593cef"                 style="width: 100.0%; height: 100.0%;">                 New marker! :D</div>                 ')[0];
+                popup_6bba9a969eac49638682640e2b9dd9bb.setContent(html_e82060d59b654a899bf4eb0653593cef);
+            
+
+            marker_544daba3cb1643ea9950f8f3b36df0b8.bindPopup(popup_6bba9a969eac49638682640e2b9dd9bb);
+
+            
+        
+        
+            
+
+            var marker_177cfc754e774872adcaec43de26b265 = L.marker(
+                [40.80629,-73.963005],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_b0cdd0183ec74f0cbf695eecc72813b5);
             
         
             
-            var popup_52986d3668f6444cac1cc6616332d798 = L.popup({maxWidth: '300'});
+            var popup_996b7ebbb3fd43e48ec72ef2a8321fd0 = L.popup({maxWidth: '300'});
 
             
-                var html_5bfca6b055e84690bea301540b4f4aaf = $('         <div id="html_5bfca6b055e84690bea301540b4f4aaf"                 style="width: 100.0%; height: 100.0%;">                 My new marker</div>                 ')[0];
-                popup_52986d3668f6444cac1cc6616332d798.setContent(html_5bfca6b055e84690bea301540b4f4aaf);
+                var html_0ca07fdff3f54980aac57a3da8e12547 = $('         <div id="html_0ca07fdff3f54980aac57a3da8e12547"                 style="width: 100.0%; height: 100.0%;">                 New marker! :D</div>                 ')[0];
+                popup_996b7ebbb3fd43e48ec72ef2a8321fd0.setContent(html_0ca07fdff3f54980aac57a3da8e12547);
             
 
-            marker_27003c8b26f747a78f44e3e0a82d8ec2.bindPopup(popup_52986d3668f6444cac1cc6616332d798);
+            marker_177cfc754e774872adcaec43de26b265.bindPopup(popup_996b7ebbb3fd43e48ec72ef2a8321fd0);
 
             
         
